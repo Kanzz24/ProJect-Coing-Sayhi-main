@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React, { useEffect } from 'react';
 import './home.css';
 
@@ -255,11 +256,11 @@ function Home() {
         <div className="nav-container">
           <div className="logo"></div>
           <div className="menu-links">
-            <a href="/" className="active">Home</a>
+            <Link to="/" className="active">Home</Link>
             <a href="/work">Work</a>
-            <a href="/team">Team</a>
+            <Link to="/team">Team</Link>
             <a href="/contact">Contact</a>
-          </div>
+</div>
           <div className="nav-actions">
             <button className="search-btn" aria-label="Search">🔍</button>
             <label className="theme-switch" htmlFor="checkbox" aria-label="Toggle Dark Mode">
